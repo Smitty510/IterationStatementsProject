@@ -16,28 +16,29 @@ namespace IterationStatements
             //-----START HERE------------------------------------------
             //Create a variable of type int and name it num
             //initialize the variable with a value of 0
-            int myNumber = 0;
+            var num(0);
 
 
             // Create a do-while loop and use the template below:
             do
             {
                 // Increment num by 1
-                myNumber++;
+                num++;
                 // Then add num to the collection - numbers
-                numbers.Add(myNumber);
+                numbers.Add(num);
                 // Hint: reference num inside of the Add method's parentheses
 
 
-            } while (myNumber < 100); // <---- While your variable is less than 100
+            } while (num < 100); // <---- While your variable is less than 100
             {
-                while (myNumber < 200) ; // Create a while loop  <--- While num is less than 200
-                myNumber++;             // Increment num by 1
-                numbers.Add(myNumber); // Then add num to the collection numbers
+                while (num < 200) ; // Create a while loop  <--- While num is less than 200
+                num++;             // Increment num by 1
+                numbers.Add(num); // Then add num to the collection numbers
             }
             Console.WriteLine("Increase:");
-            foreach(var item in numbers) 
+
             
+
 
 
 
@@ -54,12 +55,18 @@ namespace IterationStatements
 
 
             // Create a foreach loop using the collection - numbers
-                //In the scope of the foreach loop, print each number in numbers
-             
+            //In the scope of the foreach loop, print each number in numbers
 
+            foreach (var item in numbers)
+            {
+                Console.Writeline($"{item}");
+            }
 
             Console.WriteLine("");
             Console.WriteLine("Decrease:");
+
+
+
 
 
             // Create a for loop - this will print the numbers in reverse order - from 200 to 1
