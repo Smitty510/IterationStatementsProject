@@ -55,18 +55,14 @@ namespace IterationStatements
 
 
             // Create a foreach loop using the collection - numbers
-            //In the scope of the foreach loop, print each number in numbers
+                //In the scope of the foreach loop, print each number in numbers
+             foreach(var n in numbers)
+             {
+              Console.WriteLine(n); 
+             }
+                
 
-            foreach (var item in numbers)
-            {
-                Console.Writeline($"{item}");
-            }
-
-            Console.WriteLine("");
-            Console.WriteLine("Decrease:");
-
-
-
+            
 
 
             // Create a for loop - this will print the numbers in reverse order - from 200 to 1
@@ -75,9 +71,9 @@ namespace IterationStatements
             // AND as long as i is greater than or equal to 0
             // Decrement i by 1
 
-            for (int i = 199; i >= 0; i--)//start for loop here
+            for(int i = 199; i <= numbers.Count && i >= 0; i--)//start for loop here
             {
-                Console.WriteLine($"{numbers[i]}"); // place numbers[i] inside of the Console.WriteLine() method
+                Console.WriteLine(numbers[i]); // place numbers[i] inside of the Console.WriteLine() method
                 
             }
 
